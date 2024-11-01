@@ -2,7 +2,7 @@
  *
  * Created by: Evan M
  * Created on: Oct 2024
- * This program counts down from 4
+ * This program counts down from 4 using robot:bit neopixels
 */
 
 //variables
@@ -11,6 +11,7 @@ let count = 4
 let pixel = 4
 
 //cleanup
+    //button b
 input.onButtonPressed(Button.B,function() { 
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
@@ -43,4 +44,3 @@ while (count >= 0) {
 }
     basic.showIcon(IconNames.Happy)
 })
-
